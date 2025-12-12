@@ -141,7 +141,7 @@ class TestRadixSort:
             expected = sorted(a)
             assert result == expected
 
-    def test_radix_sort_error(self):
+    def test_radix_sort_err(self):
         a = [-1, 2, 3]
         with pytest.raises(ValueError, match="nums should be >= 0"):
             radix_sort(a)
