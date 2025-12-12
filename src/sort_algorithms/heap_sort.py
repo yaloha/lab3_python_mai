@@ -1,4 +1,5 @@
 def create_heap(a: list[int], n: int, i: int) -> list[int]:
+    """Функция для создания бинарной кучи из передаваемого массивва"""
     largest = i
     l = 2 * i + 1
     r = 2 * i + 2
@@ -13,6 +14,7 @@ def create_heap(a: list[int], n: int, i: int) -> list[int]:
 
 
 def heap_sort(a: list[int]) -> list[int]:
+    """Функция для сортировки кучей"""
     n = len(a)
     for i in range(n // 2 - 1, -1, -1):
         create_heap(a, n, i)

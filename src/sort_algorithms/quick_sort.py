@@ -1,4 +1,5 @@
 def pivot_divide(a: list[int], first: int, last: int) -> int:
+    """Функция для разбиения по опорному элементу"""
     pivot = a[last]
     i = first - 1
     for j in range(first, last):
@@ -10,6 +11,7 @@ def pivot_divide(a: list[int], first: int, last: int) -> int:
 
 
 def quick_sort(a: list[int], first: int, last: int) -> list[int]:
+    """Быстрая сортировка"""
     if first < last:
         pivot = pivot_divide(a, first, last)
         quick_sort(a, first, pivot - 1)
